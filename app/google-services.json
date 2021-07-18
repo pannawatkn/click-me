@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "433920082888",
+    "firebase_url": "https://click-me-94566.firebaseio.com",
+    "project_id": "click-me-94566",
+    "storage_bucket": "click-me-94566.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433920082888:android:7b3167551b7192dc1836fd",
+        "android_client_info": {
+          "package_name": "panphajed.ssru.clickme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "433920082888-64r4finuegc4cmr0s6ei7qc69b8ib447.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "panphajed.ssru.clickme",
+            "certificate_hash": "9d7b1506972d4486963809f98e60722b02532066"
+          }
+        },
+        {
+          "client_id": "433920082888-if1sdov502neo67mkvulm0pnttk2pj5r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAphagbxT7ZjVplaDVpYoOm0XBCOe8seWI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "433920082888-if1sdov502neo67mkvulm0pnttk2pj5r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

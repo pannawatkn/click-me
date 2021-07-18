@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectDifficultyActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/bg4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Difficulty Level"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/background_dark"
+        android:layout_marginBottom="30dp"/>
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="Easy"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/green"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="Medium"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/yellow"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:text="Hard"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/red"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/backButtonStart"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:text="Back"
+        android:textSize="20sp"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/blue"
+        android:onClick="goBack"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>

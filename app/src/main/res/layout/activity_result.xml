@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    android:background="@drawable/bg4">
+
+    <Button
+        android:id="@+id/helpButtonResult"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_help"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:onClick="goHelp"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/background_dark"/>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutModeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewScore"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:id="@+id/modeResultTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mode: "
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/background_dark"/>
+
+                <TextView
+                    android:id="@+id/modeResultTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_toRightOf="@id/modeResultTextView1"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutScoreView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/relativeLayoutModeView">
+
+                <TextView
+                    android:id="@+id/scoreResultTextView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Score: "
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@android:color/background_dark"/>
+
+                <TextView
+                    android:id="@+id/scoreResultTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@id/scoreResultTextView1"
+                    android:textColor="@android:color/background_dark"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutPercentView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_below="@+id/relativeLayoutScoreView">
+
+                <TextView
+                    android:id="@+id/percentResultTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/background_dark"/>
+            </RelativeLayout>
+
+        <TextView
+            android:id="@+id/enterYourNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your name"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/relativeLayoutPercentView"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/background_dark"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/inputNameResultEditText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:inputType="text"
+        android:gravity="center"
+        android:layout_below="@+id/relativeLayoutScore"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/edit_text_background"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ 1234567890"
+        android:maxLength="10"
+        android:textColor="@android:color/background_dark"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputNameResultEditText"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/leaderboardButtonResult"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Leaderboard"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/green"/>
+
+        <Button
+            android:id="@+id/playAgainButtonResult"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Play Again"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/yellow"
+            android:layout_below="@+id/leaderboardButtonResult"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/backToHomeButtonResult"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:text="Home"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/red"
+            android:layout_below="@+id/playAgainButtonResult"
+            android:layout_marginTop="20dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

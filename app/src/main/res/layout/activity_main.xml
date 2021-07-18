@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg4">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="255dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"/>
+
+    <Button
+        android:id="@+id/helpButtonMain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_help"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="370dp">
+
+        <Button
+            android:id="@+id/startButtonHome"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Start"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/green"/>
+        <Button
+            android:id="@+id/leaderBoardButtonHome"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Leaderboard"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/yellow"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/startButtonHome"/>
+
+        <Button
+            android:id="@+id/exitButtonHome"
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:text="Exit"
+            android:textSize="20sp"
+            android:background="@drawable/button_background"
+            android:backgroundTint="@color/red"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/leaderBoardButtonHome"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/settingButtonMain"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_settings"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"/>
+
+</RelativeLayout>

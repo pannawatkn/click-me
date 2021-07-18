@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity"
+    android:id="@+id/relativeLayoutBackgroudInGame"
+    android:background="@drawable/bg4">
+
+    <RelativeLayout
+        android:id="@+id/layoutForTimeAndCombo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/backImageViewInGame"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:textSize="20sp"
+            android:background="@drawable/ic_arrow_back"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="38dp"
+            android:onClick="goBack"/>
+
+        <TextView
+            android:id="@+id/circleCountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle: 100"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/background_dark"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"/>
+
+        <RelativeLayout
+            android:id="@+id/relativeTimeColorInGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/time_remain_background_green"
+            android:drawablePadding="2dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:id="@+id/timeRemainingInGameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:id="@+id/scoreInGameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"
+                android:layout_centerHorizontal="true"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/comboInGameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Combo: 0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/background_dark"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/scoreInGameTextView"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutForTimeAndCombo">
+    </RelativeLayout>
+
+</RelativeLayout>
